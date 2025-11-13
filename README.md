@@ -62,25 +62,24 @@ All major entities are broken down in simple format, including:
 
 ✔ Relationships
 
-Defined in simplified format such as:
 1. Users participate in Chats
 2. Users send Messages
 3. Chats contain Messages
 4. Messages contain Media
-6. Users post and view Status
-7. Users block Users
-8. Users have Devices
+5. Users post and view Status
+6. Users block Users
+7. Users have Devices
 
 ✔ ERD representing all major relationships:
 
-Users ↔ Chats (M:M)
-Chats → Messages (1:M)
-Messages → Media (1:1)
-Users → Status (1:M)
-Status ↔ Users (Views) (M:M)
-Users → Devices (1:M)
-Users → Call Logs (1:M)
-Users ↔ Users (Blocked Contacts) (M:M)
+1. Users ↔ Chats (M:M)
+2. Chats → Messages (1:M)
+3. Messages → Media (1:1)
+4. Users → Status (1:M)
+5. Status ↔ Users (Views) (M:M)
+6. Users → Devices (1:M)
+7. Users → Call Logs (1:M)
+8. Users ↔ Users (Blocked Contacts) (M:M)
 
 ✔ ERD ( Entity-Relationship Diagram )
 
