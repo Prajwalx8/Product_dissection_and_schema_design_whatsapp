@@ -1,23 +1,16 @@
-# 📱 Product Dissection & Schema Design – WhatsApp
+📱 Product Dissection & Schema Design – WhatsApp
 
 This project presents a complete product dissection and database schema design of WhatsApp, one of the world's most widely used messaging platforms. The goal of this case study is to analyze WhatsApp’s core features, understand how the product works at a functional level, and design a scalable relational database schema that supports its major operations.
 
 🚀 Project Overview
 
 WhatsApp has transformed global communication by enabling secure, real-time messaging on a massive scale. This project breaks down WhatsApp’s features, including:
-
 One-on-One Messaging
-
 Group Chats
-
 Voice & Video Calls
-
 Media Sharing (images, videos, documents, audio)
-
 Status (24-hour stories)
-
 Multi-device functionality
-
 User Blocking & Privacy
 
 🧩 Product Dissection
@@ -26,117 +19,75 @@ This repository includes detailed breakdowns of WhatsApp’s product components:
 
 ✔ Core Features Explained
 
-Instant Messaging
-
-Voice/Video Calling
-
-Group Chats & Communities
-
-Status Updates
-
-Media & Document Sharing
-
-Business Tools
-
-Multi-device Support
-
-End-to-End Encryption (conceptual)
+1. Instant Messaging
+2. Voice/Video Calling
+3. Group Chats & Communities
+4. Status Updates
+5. Media & Document Sharing
+6. Business Tools
+7. Multi-device Support
+8. End-to-End Encryption (conceptual)
 
 ✔ Real-World Problems Solved by WhatsApp
 
-Costly global communication
-
-Privacy and security concerns
-
-Low-bandwidth communication issues
-
-Fragmented messaging across multiple apps
-
-Small business–customer engagement
-
-Group coordination and collaboration
-
-Instant information-sharing across regions
+1. Costly global communication
+2. Privacy and security concerns
+3. Low-bandwidth communication issues
+4. Fragmented messaging across multiple apps
+5. Small business–customer engagement
+6. Group coordination and collaboration
+7. Instant information-sharing across regions
 
 🗂 Database Schema Design
 
-This project includes:
+✔ Database and Tools
+
+• PostgreSQL
+• PgAdmin4
 
 ✔ Entity Descriptions
 
-All major entities are broken down in simple format (like Instagram example), including:
+All major entities are broken down in simple format, including:
 
-Users
-
-Chats
-
-Chat Participants
-
-Messages
-
-Media
-
-Status
-
-Status Views
-
-Devices
-
-Call Logs
-
-Blocked Contacts
+1. Users
+2. Chats
+3. Chat Participants
+4. Messages
+5. Media
+6. Status
+7. Status Views
+8. Devices
+9. Call Logs
+10. Blocked Contacts
 
 ✔ Relationships
 
 Defined in simplified format such as:
+1. Users participate in Chats
+2. Users send Messages
+3. Chats contain Messages
+4. Messages contain Media
+6. Users post and view Status
+7. Users block Users
+8. Users have Devices
 
-Users participate in Chats
-
-Users send Messages
-
-Chats contain Messages
-
-Messages contain Media
-
-Users post and view Status
-
-Users block Users
-
-Users have Devices
-
-✔ PostgreSQL SQL Scripts
-
-Full CREATE TABLE scripts for all entities:
-
-With primary keys
-
-Foreign keys
-
-Constraints
-
-Data types
-
-📊 Visual ERD (Entity–Relationship Diagram)
-
-A clean ERD (PNG image) representing all major relationships:
+✔ ERD representing all major relationships:
 
 Users ↔ Chats (M:M)
-
 Chats → Messages (1:M)
-
 Messages → Media (1:1)
-
 Users → Status (1:M)
-
 Status ↔ Users (Views) (M:M)
-
 Users → Devices (1:M)
-
 Users → Call Logs (1:M)
-
 Users ↔ Users (Blocked Contacts) (M:M)
 
-The ERD clearly visualizes how WhatsApp manages billions of interactions reliably.
+✔ ERD ( Entity-Relationship Diagram )
+
+<img width="1363" height="758" alt="ERD" src="https://github.com/user-attachments/assets/98b9d183-4778-44e6-8b15-83d4a95eae73" />
+
+
+
 
 🧠 Conclusion
 
